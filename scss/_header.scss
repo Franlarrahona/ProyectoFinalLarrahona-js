@@ -1,0 +1,33 @@
+header{
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 1px solid rgb(79, 79, 79);
+    h1{
+        font-family: 'Pixelify Sans', cursive;
+        font-size: 350%;
+        margin-left: 20px;
+    }
+    .menuNav{
+        display: flex;
+        align-items: center;
+        .btnNav{
+            margin: 10px;
+            border: 1px solid rgb(255, 255, 255);
+            font-size: 18px;
+            padding: 2px;
+            border-radius: 0.3rem;
+            &:hover{
+                border: 1px solid rgb(79, 79, 79);
+            }
+        }
+    }
+    .buscador{
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        button{
+            border: 0;
+            margin-left: 10px;
+        }
+    }
+}

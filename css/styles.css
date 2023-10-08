@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Mooli&family=Pixelify+Sans&family=Quattrocento+Sans&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(79, 79, 79);
+}
+header h1 {
+  font-family: "Pixelify Sans", cursive;
+  font-size: 350%;
+  margin-left: 20px;
+}
+header .menuNav {
+  display: flex;
+  align-items: center;
+}
+header .menuNav .btnNav {
+  margin: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  font-size: 18px;
+  padding: 2px;
+  border-radius: 0.3rem;
+}
+header .menuNav .btnNav:hover {
+  border: 1px solid rgb(79, 79, 79);
+}
+header .buscador {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+header .buscador button {
+  border: 0;
+  margin-left: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+main #almacenamientoProductos {
+  width: 2000px;
+  margin-left: 100px;
+}
+main #almacenamientoProductos .producto {
+  display: inline-block;
+  margin: 50px;
+  border: 1px solid rgb(85, 85, 85);
+}
+main #almacenamientoProductos .producto .nombreProducto {
+  margin-top: 15px;
+  margin-left: 5px;
+  font-size: 19px;
+}
+main #almacenamientoProductos .producto .precioProducto {
+  margin-left: 5px;
+  display: inline-block;
+  width: 190px;
+  margin-bottom: 5px;
+}
+main #almacenamientoCarrito {
+  margin-right: 15px;
+  width: 380px;
+}
+main #almacenamientoCarrito h2 {
+  font-family: "Pixelify Sans", cursive;
+  font-size: 30px;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+main #almacenamientoCarrito .producto_carrito {
+  display: flex;
+  flex-direction: row;
+  width: 275px;
+  border: 1px solid rgb(85, 85, 85);
+}
+main #almacenamientoCarrito .producto_carrito .img_carrito {
+  width: 120px;
+  margin-right: 15px;
+}
+main #almacenamientoCarrito .producto_carrito div {
+  display: flex;
+  flex-direction: column;
+}
+main #almacenamientoCarrito .producto_carrito div .nombreProducto_carrito {
+  font-size: 20px;
+  margin-top: 5px;
+}
+main #almacenamientoCarrito .producto_carrito .removerProducto {
+  width: 55px;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 20%;
+  margin-left: 70px;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
