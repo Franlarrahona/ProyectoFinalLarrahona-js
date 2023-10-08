@@ -15,11 +15,10 @@ fetch("productos.json")
         
         
 
-        //CARGA DE PRODUCTOS
+        //VISUALIZACION DE PRODUCTOS
 
         for (let producto of productos){
 
-            console.log("producto cargado")
         
             let impProducto = document.createElement("div");
             impProducto.innerHTML = `<img class="imgProducto" src="${producto.imgProducto}">
@@ -36,11 +35,8 @@ fetch("productos.json")
             btnCarrito = document.querySelectorAll(".btnCarrito")
         }
 
-        
 
-
-
-        // EVENTO 
+        // FUNCIONALDIDAD DE BOTON AGREGAR A CARRITO
 
         for (let boton of btnCarrito){
 
@@ -49,9 +45,6 @@ fetch("productos.json")
         }
 
     })
-
-
-//FUNCIONES
 
 
 //FUNCION AGERGAR AL CARRITO
@@ -108,13 +101,7 @@ function agregarCarrito(e){
 }
 
 
-
-
-
-
-
 //CARGA DE PRODUCTOS AL CARRITO 
-
 
 let impBtnRemover 
 let almacenamientoCarrito
@@ -147,7 +134,6 @@ function mostrarProductoCarrito(){
 
 
     let btnRemover = document.querySelectorAll(".removerProducto")
-    console.log(btnRemover)
 
 
     for(let boton of btnRemover){
@@ -177,18 +163,16 @@ function removerProducto(e){
     e.target.parentNode.parentNode.remove();
 
     let infoItemEliminar = e.target.parentNode
-    console.log(infoItemEliminar)
 
     let nombreProductoEliminar = infoItemEliminar.querySelector("h6").textContent
-    console.log(nombreProductoEliminar)
 
     let indiceElementoEliminar = carrito.findIndex(item => item.nombre == nombreProductoEliminar)
-    console.log(indiceElementoEliminar)
 
     if(indiceElementoEliminar != -1){
         carrito.splice(indiceElementoEliminar,1);
     }
-    console.log(carrito)
+
+    // NOTIFICACION DE PRODUCTO ELIMINADO
 
     Toastify({
         text: "Producto quitado del carrito",
